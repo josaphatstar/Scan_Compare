@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F3F4F6"
+    tools:context=".activity_verdict">
+
+    <!-- En-tête -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="6dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_chevron_right"
+            android:rotation="180"
+            android:clickable="true"
+            android:focusable="true"
+            app:tint="#111827" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Le Verdict"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#111827"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+
+    <!-- Sous-titre -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Même unité. Le meilleur choix."
+        android:textSize="15sp"
+        android:fontFamily="sans-serif"
+        android:textColor="#6B7280"
+        android:layout_marginBottom="24dp" />
+
+    <!-- CARTE GAGNANTE (MEILLEURE OFFRE) -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardWinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="0dp"
+        app:strokeWidth="2dp"
+        app:strokeColor="#10B981"
+        android:backgroundTint="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Badge Meilleure Offre -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🏆 MEILLEURE OFFRE"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#059669"
+                android:background="#D1FAE5"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/tvWinnerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Produit B"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#111827"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/tvWinnerPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="130.00 / kg"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="#10B981"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Ligne avec icône de coche et texte -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/bg_green_circle"
+                    android:src="@drawable/ic_check"
+                    android:padding="3dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Le prix au kilo le plus bas"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#059669"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- CARTE PERDANTE (OPTION LA PLUS CHÈRE) -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardLoser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="0dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="#E5E7EB"
+        android:backgroundTint="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Option la plus chère"
+                android:textSize="12sp"
+                android:textColor="#6B7280"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvLoserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Produit A"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#111827"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/tvLoserPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="140.00 / kg"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#374151" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- BANNIÈRE D'ÉCONOMIE (Sur deux lignes) -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="0dp"
+        app:strokeWidth="0dp"
+        android:backgroundTint="#D1FAE5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvSavingsLine1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="💡 Vous économisez 7.1%"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#065F46" />
+
+            <TextView
+                android:id="@+id/tvSavingsLine2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="avec le Produit B"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#065F46"
+                android:layout_marginTop="2dp" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Espace flexible -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Bouton Nouvelle Comparaison -->
+    <Button
+        android:id="@+id/btnNewComparison"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Nouvelle comparaison"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#10B981"
+        app:cornerRadius="16dp"
+        android:layout_marginBottom="16dp" />
+
+</LinearLayout>

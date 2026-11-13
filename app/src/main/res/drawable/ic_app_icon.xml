@@ -1,0 +1,61 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="168dp"
+    android:height="168dp"
+    android:viewportWidth="168"
+    android:viewportHeight="168">
+
+    <!-- Fond arrondi de l'icône -->
+    <path
+        android:fillColor="#ECFDF5"
+        android:pathData="M40 0H128C150.091 0 168 17.9086 168 40V128C168 150.091 150.091 168 128 168H40C17.9086 168 0 150.091 0 128V40C0 17.9086 17.9086 0 40 0Z" />
+
+    <!-- Coin haut-gauche -->
+    <path
+        android:strokeColor="#10B981"
+        android:strokeWidth="9.5625"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M56.375 30.3438H39.9062C33.5312 30.3438 30.3438 33.5312 30.3438 39.9062V56.375" />
+
+    <!-- Coin haut-droit -->
+    <path
+        android:strokeColor="#10B981"
+        android:strokeWidth="9.5625"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M111.625 30.3438H128.094C134.469 30.3438 137.656 33.5312 137.656 39.9062V56.375" />
+
+    <!-- Coin bas-droit -->
+    <path
+        android:strokeColor="#10B981"
+        android:strokeWidth="9.5625"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M137.656 111.625V128.094C137.656 134.469 134.469 137.656 128.094 137.656H111.625" />
+
+    <!-- Coin bas-gauche -->
+    <path
+        android:strokeColor="#10B981"
+        android:strokeWidth="9.5625"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M30.3438 111.625V128.094C30.3438 134.469 33.5312 137.656 39.9062 137.656H56.375" />
+
+    <!-- Barre verticale gauche (Produit A) -->
+    <path
+        android:fillColor="#065F46"
+        android:pathData="M59.0312 52.6562H68.5938C71.7812 52.6562 73.375 54.25 73.375 57.4375V110.562C73.375 113.75 71.7812 115.344 68.5938 115.344H59.0312C55.8438 115.344 54.25 113.75 54.25 110.562V57.4375C54.25 54.25 55.8438 52.6562 59.0312 52.6562Z" />
+
+    <!-- Barre verticale droite (Produit B) -->
+    <path
+        android:fillColor="#10B981"
+        android:pathData="M94.625 77.0938H108.438C111.625 77.0938 113.219 78.6875 113.219 81.875V110.562C113.219 113.75 111.625 115.344 108.438 115.344H94.625C91.4375 115.344 89.8438 113.75 89.8438 110.562V81.875C89.8438 78.6875 91.4375 77.0938 94.625 77.0938Z" />
+
+    <!-- Coche (Checkmark) sur la barre droite -->
+    <path
+        android:strokeColor="#065F46"
+        android:strokeWidth="3.71875"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M95.1562 101L99.9375 105.781L108.438 96.75" />
+</vector>

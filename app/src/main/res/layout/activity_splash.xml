@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#F3F4F6"
+    android:padding="24dp">
+
+    <!-- Icône de l'application -->
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/ic_app_icon"
+        android:contentDescription="Logo Scan &amp; Compare" />
+
+    <!-- Titre -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan &amp; Compare"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="#111827"
+        android:layout_marginTop="24dp" />
+
+    <!-- Sous-titre / Tagline -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Le bon prix, à la bonne unité."
+        android:textSize="15sp"
+        android:fontFamily="sans-serif"
+        android:textColor="#6B7280"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>
